@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  glassfyKey: 'f8663f0bc4514d108097b1e1befbeb45'
 };
 
 /*

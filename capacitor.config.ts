@@ -1,7 +1,7 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'io.lingoapp.glassfy1',
   appName: 'Glussfy ',
   webDir: 'www'
 };

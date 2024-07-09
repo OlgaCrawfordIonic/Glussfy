@@ -1,0 +1,365 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title *ngIf="lesson">Lesson  {{num}} </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button  defaultHref="home"></ion-back-button>
+     </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="content">
+    <div *ngIf="shortAlongA">
+      <h2> Compare /ɑ:/ and /ʌ/ vowels</h2>
+    <div id="bluetext">
+    <p> Now listen carefully and try to spot the difference between short /ʌ/ and long /a:/    Do not forget to keep the lips slightly rounded for a long /a:/ </p>
+     </div>  
+    
+     <div id="description">
+        <h2>Word pairs</h2>
+       </div>
+      
+                 
+          
+      <div id="compare">
+        <!--  <button ion-button icon-start> <ion-icon name="mic"></ion-icon>   Record Your Pronounciation</button>-->
+       </div>
+       <div id="compare">
+        <table>
+          <tr>
+            <td (click)="Play('../../assets/audio/a_sounds/tontwcom/luck.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>luck /lʌk/ - lark /lɑ:k/</td>
+          </tr>
+          <tr>
+            <td (click)="Play('../../assets/audio/a_sounds/tontwcom/duck.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>duck /dʌk/ - dark /dɑ:k/</td>
+          </tr>
+          <tr>
+            <td (click)="Play('../../assets/audio/a_sounds/tontwcom/must.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>must /mʌst/ – mast /mɑ:st/</td>
+          </tr>
+          <tr>
+            <td (click)="Play('../../assets/audio/a_sounds/tontwcom/cup.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>cup /kʌp/ - carp /kɑ:p/</td>
+          </tr>
+          <tr>
+            <td (click)="Play('../../assets/audio/a_sounds/tontwcom/hum.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>hum /hʌm/– harm /hɑ:m/</td>
+          </tr>
+        </table>
+        
+     </div>
+  
+     
+    
+    </div>
+
+    <div *ngIf="shortIlongI">
+     
+      <h2>Compare /i:/ and /ɪ/</h2>
+    <div id="description">
+        <h2>Word pairs</h2>
+       </div>
+      
+<div id="bluetext">
+<p> Now listen carefully and try to spot the difference between short /ɪ/ and long /i:/: </p>
+</div>  
+
+ 
+<div id="compare">
+  <table>
+    <tr>
+      <td (click)="Play('../../assets/audio/i_sounds/i_sound/bead.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>bead /biːd/ - bid /bɪd/</td>
+    </tr>
+    <tr>
+      <td (click)="Play('../../assets/audio/i_sounds/i_sound/lead-lid.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>lead /liːd/ - lid /lɪd/</td>
+    </tr>
+    <tr>
+      <td (click)="Play('../../assets/audio/i_sounds/i_sound/leak-lick.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>leak /liːk/ – lick /lɪk/</td>
+    </tr>
+    <tr>
+      <td (click)="Play('../../assets/audio/i_sounds/i_sound/heal-hill.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>heal /hiːl/ – hill /hɪl/</td>
+    </tr>
+    <tr>
+      <td (click)="Play('../../assets/audio/i_sounds/i_sound/least-list.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>least /liːst/ – list /lɪst/</td>
+    </tr>
+    <tr>
+      <td (click)="Play('../../assets/audio/i_sounds/i_sound/beat-bit.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>beat /biːt/ – bit /bɪt/</td>
+    </tr>
+  </table>
+</div>
+
+ 
+    </div>
+
+    <div *ngIf="shortUlongU">
+      <h2>Compare /uː/ and /ʊ/</h2>
+      <div id="bluetext">
+        <p>Listen carefully and try to spot the difference between short /ʊ/ and long /uː/</p>
+      </div>  
+           
+      <div id="description">
+        <h2>Word pairs</h2>
+      </div>
+        
+      <div id="compare">
+        <table>
+          <p (click)="Play('../../assets/audio/u_sounds/uexers/should.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>should /ʃʊd/ - shooed /ʃuːd/</p>
+          <p (click)="Play('../../assets/audio/u_sounds/uexers/pull.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>pull /pʊl/ - pool /puːl/</p>
+          <p (click)="Play('../../assets/audio/u_sounds/uexers/could.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>could /kʊd/ – cooed /kuːd/</p>
+          <p (click)="Play('../../assets/audio/u_sounds/uexers/look.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>look /lʊk/ – Luke /luːk/</p>
+        </table>                  
+      </div>
+    </div>
+
+    <div *ngIf="shortOlongO">
+      <div *ngIf="shortOlongO">
+        <h2>Compare /ɒ/ and /ɔ:/</h2>
+        <div id="bluetext">
+          <p>Listen carefully to the following pairs and try to distinguish between long /ɔ:/ and short /ɔ/</p>
+        </div>  
+            
+        <div id="description">
+          <h2>Word pairs</h2>
+        </div>
+         
+        <div id="compare">
+          <table>
+            <p (click)="Play('../../assets/audio/o_sounds/shod.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>shod /ʃɒd/ – shored /ʃɔ:d/</p>
+            <p (click)="Play('../../assets/audio/o_sounds/cod.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>cod /kɒd/ - cord /kɔ:d/</p>
+            <p (click)="Play('../../assets/audio/o_sounds/poll.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>poll /pɒl/ – Paul /pɔ:l/</p>
+            <p (click)="Play('../../assets/audio/o_sounds/sport.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>spot /spɒt/ – sport /spɔ:t/</p>
+            <p (click)="Play('../../assets/audio/o_sounds/shot.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>shot /ʃɒt/ – short /ʃɔ:t/</p>
+            <p (click)="Play('../../assets/audio/o_sounds/pot.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>pot /pɒt/ - port /pɔ:t/</p> 
+          </table>                 
+        </div>
+      
+       
+           </div>
+         
+    </div>
+
+    <div *ngIf="erSoundorSound">
+      <h2>Compare /ɔ:/ and /ɜ:/</h2>
+<div id="description"> 
+  <h2>Word pairs</h2>
+</div>
+<div id="bluetext">
+  <p>Listen to the following pairs of words carefully and don't forget that lips should be rounded for /ɔ:/ and kept in a smile position for /ɜ:/.</p>
+</div>
+
+<div id="compare">
+  <table>
+    <p (click)="Play('../../assets/audio/er_sounds/short_shirt.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>short /ʃɔ:t/ – shirt /ʃɜ:t/</p>
+    <p (click)="Play('../../assets/audio/er_sounds/walk-work.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>walk /wɔ:k/ - work /wɜ:k/</p>
+    <p (click)="Play('../../assets/audio/er_sounds/lawn-learn.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>lawn /lɔ:n/ – learn /lɜ:n/</p>
+    <p (click)="Play('../../assets/audio/er_sounds/hall-hurl.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>hall /hɔ:l/ – hurl /hɜ:l/</p>
+    <p (click)="Play('../../assets/audio/er_sounds/war-were.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>war /wɔ:/ - were /wɜ:/</p>
+  </table>
+</div>
+
+    </div>
+
+
+    <div *ngIf="thands">
+      <h2> Compare / θ / and / s /</h2>
+
+                    
+  <div id="bluetext">
+  <p> / θ / consonant can also can be confused with / s / consonant. When you  pronounce / θ /  make sure that you put the tip of the tongue close to the upper front teeth whereas  when  you pronounce  / s / the tip of the tongue should be close to the middle of the ridge behind the front teeth.
+
+   Practice the following words  and tongue twisters paying  particular attention  to the difference in the position of the tongue for / θ /  and  / s /.</p>
+   </div>  
+
+      <div id="description">
+        <h2>Word pairs</h2>
+      </div>
+
+    <div id="compare">
+      <table>
+        <p (click)="Play('../../assets/audio/th_consonants/thinks.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>think /θɪŋk/ - sink /sɪŋk/  </p>
+        <p (click)="Play('../../assets/audio/th_consonants/thoughts.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>thought /θɔːt/ – sought /sɔːt/</p>
+        <p (click)="Play('../../assets/audio/th_consonants/things.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>thing /θɪŋ/ -  sing /sɪŋ/</p>
+        <p (click)="Play('../../assets/audio/th_consonants/thicks.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>thick /θɪk/ – sick /sɪk/</p>
+        <p (click)="Play('../../assets/audio/th_consonants/thumbs.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>thumb /θʌm/ – sum /sʌm/</p>
+      </table>
+      
+      </div>
+      <div id="description">
+        <h2>Tongue twisters</h2>
+      </div>
+
+ 
+   <div id="ttwisters">
+
+         <table>
+    <p (click)="Play('../../assets/audio/th_consonants/cecily.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon> Cecily thought Sicily less thistly than Thessaly. /ˈsɛsəli θɔːt ˈsɪsəli lɛs ˈθɪsəli ðæn ˈθɛsəli/
+
+
+
+
+    </p>
+         </table>
+  </div>
+
+
+    </div>
+
+    <div *ngIf="thandf">
+      <h2>Compare / θ / and / f /</h2>
+                    
+      <div id="bluetext">
+      <p> / θ /  consonant sometimes is confused with  / f /  consonant.  An important difference in the pronunciation of these two consonants is that for  / θ / your tongue tip is close to the front teeth, whereas  for  / f /  your bottom  lip touches the front teeth.
+  Listen carefully to the following pairs of words and tongue twisters  to pick up the difference between / θ / and  / f /.</p>
+       </div>  
+       
+          <div id="description">
+            <h2>Word pairs</h2>
+          </div>
+        <div id="compare">
+  
+          <table>
+          <p (click)="Play('../../assets/audio/th_consonants/thirstf.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>thirst /θɜ:st/ – first  /fɜ:st/ </p>
+          <p (click)="Play('../../assets/audio/th_consonants/thinf.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>thin /θɪn/ -  fin  /fɪn/ </p>
+          <p (click)="Play('../../assets/audio/th_consonants/threef.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>three /θri:/  – free /fri:/</p>
+          </table>
+          </div>
+  
+          <div id="description">
+            <h2>Tongue twisters</h2>
+          </div>
+       <div id="ttwisters">
+         <table>
+        <p (click)="Play('../../assets/audio/th_consonants/freddythrush.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon> Freddy Thrush flies through thick fog  /ˈfrɛdi θrʌʃ flaɪz θruː θɪk fɒɡ/</p>
+         <p (click)="Play('../../assets/audio/th_consonants/threefree.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>Three free throws /θri: fri: θrəus/</p>
+        </table>
+        </div>
+  
+    </div>
+
+    <div *ngIf="thandz">
+      <h2>Compare / ð / and / z / </h2>
+    
+
+       
+                 
+      <div id="bluetext">
+        <p> / ð / consonant should not be confused with / z / consonant. When you  pronounce / ð / make sure that you put the tip of the tongue close to the upper front teeth whereas  when  you pronounce / z / the tip of the tongue should be close to the middle of the ridge behind the front teeth.
+  
+          Practice the following words paying  particular attention  to the difference in the position of the tongue for  / ð / and / z /. </p>
+         </div>  
+         <div id="description">
+          <h2>Word pairs</h2>
+        </div>
+             
+          <div id="compare">
+            <table>
+              <p (click)="Play('../../assets/audio/th_consonants/breathth.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon> breath /bri:ð/ -  breeze /bri:z/  </p>
+              <p (click)="Play('../../assets/audio/th_consonants/teething.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>teething /ti:ðiŋ/ - teasing  /ti:ziŋ/</p>
+              <p (click)="Play('../../assets/audio/th_consonants/clothing.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>clothing /cləuðiŋ/ - closing /cləuziŋ/</p>
+              <p (click)="Play('../../assets/audio/th_consonants/lathe.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>lathe /leið/ - lays /leiz/</p>
+            </table>
+            
+        
+     </div>
+    </div>
+
+ <div *ngIf="iendee">
+      <h2>Compare / ɪə / and / eə / </h2>
+     
+     
+
+       
+                 
+      <div id="bluetext">
+        <p>  Now listen carefully to differentiate between the diphthong / ɪə / and the diphthong / eə / </p>
+         </div>  
+         <div id="description">
+          <h2>Word pairs</h2>
+        </div>
+             
+          <div id="compare">
+            <table>
+            
+           
+             
+                <p (click)="Play('../../assets/audio/diphthongs/compare/here.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon> here /hɪə/ -  hair /heə/</p>
+             
+                <p (click)="Play('../../assets/audio/diphthongs/compare/steer.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon> steer /stɪə/ - stare /steə/</p>
+              
+                <p (click)="Play('../../assets/audio/diphthongs/compare/really.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon> really /rɪəlɪ/ - /rarely /reəlɪ/</p>
+              
+                <p (click)="Play('../../assets/audio/diphthongs/compare/beer.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon> beer /biə/ - bare /beə/</p>
+              </table> 
+        
+     </div>
+    </div>
+    
+    <div *ngIf="euor">
+      <h2>Compare /əʊ/ and /ɔ:/</h2>
+     
+     
+
+       
+                 
+      <div id="bluetext">
+        <p> Very often the diphthong /əʊ/ is pronounced as a single vowel that is similar to the vowel /ɔ:/  .
+          Listen and practice the following word pairs until you can clearly hear and reproduce the difference between /əʊ/ and /ɔ:/
+          </p>
+         </div>  
+         <div id="description">
+          <h2>Word pairs</h2>
+        </div>
+             
+          <div id="compare">
+            <table>
+              <p (click)="Play('../../assets/audio/diphthongs/compare/pork.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>pork /pɔ:k/ - poke /pəʊk/</p>
+          
+              <p (click)="Play('../../assets/audio/diphthongs/compare/lawn.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>lawn /lɔ:n/ - loan /ləʊn/</p>
+          
+              <p (click)="Play('../../assets/audio/diphthongs/compare/born.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>born /bɔ:n/ - bone /bəʊn/</p>
+          
+              <p (click)="Play('../../assets/audio/diphthongs/compare/bought.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>bought /bɔ:t/ - boat /bəʊt/</p>
+          
+              <p (click)="Play('../../assets/audio/diphthongs/compare/cork.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>cork /kɔ:k/ - coke /kəʊk/</p>
+          
+              <p (click)="Play('../../assets/audio/diphthongs/compare/call.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>call /kɔ:l/ - coal /kəʊl/</p>
+          
+              <p (click)="Play('../../assets/audio/diphthongs/compare/claws.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>claws /klɔ:z/ - close /kləʊz/</p>
+          </table>
+          
+     </div>
+    </div>   
+    
+    <div *ngIf="euo">
+      <h2>Compare /əʊ/ and /ɒ/</h2>
+      
+      <div id="bluetext">
+        <p>Sometimes the diphthong /əʊ/ is pronounced as a single vowel that is similar to the short vowel /ɒ/. </p>
+        <p>Listen and practice the following word pairs until you can clearly hear and reproduce the difference between /əʊ/ and /ɒ/</p>
+         </div>  
+         <div id="description">
+          <h2>Word pairs</h2>
+        </div>
+             
+          <div id="compare">
+            <table>
+              <p (click)="Play('../../assets/audio/diphthongs/compare/bone.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>bone /bəʊn/ - bond /bɒnd/</p>
+          
+              <p (click)="Play('../../assets/audio/diphthongs/compare/note.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>note /nəʊt/ - not /nɒt/</p>
+          
+              <p (click)="Play('../../assets/audio/diphthongs/compare/open.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>open /əʊp(ə)n/ - on /ɒn/</p>
+          
+              <p (click)="Play('../../assets/audio/diphthongs/compare/dote.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>dote /dəʊt/ - dot /dɒt/</p>
+          
+              <p (click)="Play('../../assets/audio/diphthongs/compare/goat.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>goat /gəʊt/ - got /gɒt/</p>
+          
+              <p (click)="Play('../../assets/audio/diphthongs/compare/boat.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>boat /bəʊt/ - bot /bɒt/</p>
+          
+              <p (click)="Play('../../assets/audio/diphthongs/compare/load.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>load /ləʊd/ - lot /lɒt/</p>
+          </table>
+          
+          
+     </div>
+    </div>              
+  
+  
+      
+    
+  </div> <!--end of content div-->  
+</ion-content>

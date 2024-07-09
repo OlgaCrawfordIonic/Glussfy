@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+       Glassfy
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="/home">Back</ion-back-button>
+			<ion-button (click)="restore()">Restore</ion-button>
+		</ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <div>Just testing ...2</div>
+    <div *ngFor="let offeringGroup of offerings | async">
+     <ion-item-divider>
+      <ion-label>{{offeringGroup.offeringId}}</ion-label>
+     </ion-item-divider>
+   <ion-item *ngFor="let sku of offeringGroup.skus">
+      <ion-label class="ion-text-wrap">
+        {{ sku.product.title }}
+       
+      </ion-label>
+      <ion-button slot="end" fill="outline" (click)="purchase(sku)">
+        {{ sku.product.price | number:'1.0-2' | currency: sku.product.currencyCode }}
+      </ion-button>
+    </ion-item>
+    </div>
+  </ion-list>
+
+</ion-content>

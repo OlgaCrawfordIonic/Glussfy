@@ -9,6 +9,106 @@
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
 
+ $content-width: 600px;
+
+$content-width-mobile: 100%;
+$centre-auto: 0 auto;
+$par: #3D3DB8;
+$headings-color:#2564B8;
+$text-alighn-center:center;
+
+ #content {width: $content-width;
+    margin: $centre-auto;   padding-bottom: 15px   
+   };
+ 
+@media screen and (max-width:600px){
+#content { width:$content-width-mobile; padding-bottom: 15px};
+                             };
+@media screen and (max-width:325px){
+
+   #content .homepage1   {font-size: 15px};
+  
+  
+  @media screen and (max-width:600px){
+  #content { width:$content-width-mobile; padding-bottom: 15px};
+                       };                                                     };
+#content {
+td {color:$par;  display:block; font-size:25px; line-height: 150%; }
+table {margin:$centre-auto; margin-bottom: 15px; }
+h2 {color:$headings-color; font-size: 29px; font-weight:bold; text-align:$text-alighn-center; padding-bottom:10px;}
+h3 { text-align: $text-alighn-center; font-size: 25px;}
+button {margin:15px 0px 15px 40px;} 
+p{margin: 0px 5px 0px 5px} 
+
+}    
+
+:root {
+   --ion-color-rose: #fecdd3;
+   --ion-color-rose-rgb: 254, 205, 211;
+   --ion-color-rose-contrast: #000000;
+   --ion-color-rose-contrast-rgb: 0, 0, 0;
+   --ion-color-rose-shade: #e0b4ba;
+   --ion-color-rose-tint: #fed2d7;
+ }
+ 
+ .ion-color-rose {
+   --ion-color-base: var(--ion-color-rose);
+   --ion-color-base-rgb: var(--ion-color-rose-rgb);
+   --ion-color-contrast: var(--ion-color-rose-contrast);
+   --ion-color-contrast-rgb: var(--ion-color-rose-contrast-rgb);
+   --ion-color-shade: var(--ion-color-rose-shade);
+   --ion-color-tint: var(--ion-color-rose-tint);
+ }
+ 
+ div[slot='content'] {
+   background: rgba(var(--ion-color-rose-rgb), 0.25);
+ }
+
+  
+#description {background-image: linear-gradient(180deg,rgba(179, 12, 201, 0.135) 0%,rgb(255,255,255) 100%);}
+//#description {  background-color: rgba(179, 12, 201, 0.135);}
+
+#description h2 {
+font-size:22px;
+padding:10px;
+color:#2564B8;
+text-align:$text-alighn-center;
+// background-image: linear-gradient(180deg,rgb(112, 111, 160) 0%,rgb(255,255,255) 100%);
+border-top:blue 1px solid;border-bottom: blue 1px solid;  
+
+}
+
+#description h1 {
+   font-size:28px;
+   padding:10px;
+   color:#2564B8;
+   text-align:$text-alighn-center;
+   // background-image: linear-gradient(180deg,rgb(112, 111, 160) 0%,rgb(255,255,255) 100%);
+   border-top:blue 1px solid;border-bottom: blue 1px solid;  }
+   
+  
+   
+#bluetext  {font-size:20px; color:$par;}  
+
+#ttwisters p {color:$par;   font-size:20px; padding-top: 10px;}
+
+#writtenform    {text-align: $text-alighn-center; margin-bottom: 15px; }
+#writtenform  { p   {font-weight:bold;color:$par;  font-size:18px; } 
+          strong  {color:red;} 
+        } 
+#note {color:#0000FF;}  
+#compare {color:$par;}     
+
+#compare p {
+   font-size: 20px;
+   padding:5px;
+}
+#writtenformverb    {background-color:#DDEAF9; width:320px; border:thin #DDEAF9 none; border-radius: 4px; margin:30px 0px 20px 100px;}
+#writtenformverb p   {font-weight:bold;color:$par;  font-size:16px; } 
+#writtenformverb strong  {color:#0000FF;}
+        
+
+
 /* Core CSS required for Ionic components to work properly */
 @import "@ionic/angular/css/core.css";
 
@@ -16,7 +116,7 @@
 @import "@ionic/angular/css/normalize.css";
 @import "@ionic/angular/css/structure.css";
 @import "@ionic/angular/css/typography.css";
-@import "@ionic/angular/css/display.css";
+@import '@ionic/angular/css/display.css';
 
 /* Optional CSS utils that can be commented out */
 @import "@ionic/angular/css/padding.css";
@@ -24,14 +124,3 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
-
-/**
- * Ionic Dark Mode
- * -----------------------------------------------------
- * For more info, please see:
- * https://ionicframework.com/docs/theming/dark-mode
- */
-
-/* @import "@ionic/angular/css/palettes/dark.always.css"; */
-/* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import '@ionic/angular/css/palettes/dark.system.css';

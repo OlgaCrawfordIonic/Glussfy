@@ -1,0 +1,727 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title *ngIf="lesson">Lesson  {{num}} </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button  defaultHref="home"></ion-back-button>
+     </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <div id="content">
+    <div *ngIf="shortA">
+     
+        <h2>/ ʌ / vowel</h2>
+        <div id="description">
+            <h2>Description</h2>
+      
+                 </div><!--  end of description -->
+            
+        <div id="bluetext">
+          <p> / ʌ /  is  a short vowel.  You pronounce it as if you intend to pronounce /ɑː/ but then suddenly lift the back of the tongue towards the soft palate.  </p>
+         </div>
+     
+         <div id="description">
+            <h2>Practice</h2>
+      
+                 </div><!--  end of description -->
+                   <!-- <button ion-button icon-start>
+                    <ion-icon name="mic"></ion-icon>   Record Your Pronounciation</button> -->
+     
+                    <table>
+                      <tr>
+                         <td (click)="Play('../../assets/audio/a_sounds/short_a/rum.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon> rum /rʌm/</td>
+                         <td (click)="Play('../../assets/audio/a_sounds/short_a/come.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon> come /kʌm/</td>
+                         <td (click)="Play('../../assets/audio/a_sounds/short_a/sucks.mp3')"> <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>  sucks /sʌks/</td>
+                      </tr>
+                      <tr>
+                         <td (click)="Play('../../assets/audio/a_sounds/short_a/rough.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>  rough /rʌf/</td>
+                         <td (click)="Play('../../assets/audio/a_sounds/short_a/ton.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>  ton /tʌn/ </td>
+                         <td (click)="Play('../../assets/audio/a_sounds/short_a/pun.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>  pun /pʌn/ </td>
+                      </tr>
+                      <tr>
+                         <td (click)="Play('../../assets/audio/a_sounds/short_a/much.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>   much /mʌtʃ/</td>
+                         <td (click)="Play('../../assets/audio/a_sounds/short_a/bus.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>   bus /bʌs/</td>
+                         <td (click)="Play('../../assets/audio/a_sounds/short_a/love.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>   love /lʌv/</td>
+                      </tr>
+                      <tr>
+                         <td (click)="Play('../../assets/audio/a_sounds/short_a/mother.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>   mother /mʌðə/</td>
+                         <td (click)="Play('../../assets/audio/a_sounds/short_a/cup.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>   cup /kʌp/</td>
+                         <td (click)="Play('../../assets/audio/a_sounds/short_a/enough.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>   enough /ɪˈnʌf/</td>
+                      </tr>
+                   </table>
+                   
+              
+              <div id="description">
+                  <h2>Written Form of / ʌ /</h2>
+     
+               </div>
+     
+            <div id="writtenform">
+      
+       <p><strong>u before consonant </strong> pun, rum, rust, just  </p>
+        <p> <strong> o before m, v, th  </strong> come, love,  mother </p>
+         <p><strong> ou + gh </strong> rough, tough, enough</p>
+            </div>   
+       
+           
+     
+     <!--<button *ngIf="NextLesson" ion-button icon-end (click)="Lesson3($event, 'Lesson 3', 'Next Lesson')">
+                Next Lesson
+                <ion-icon name="arrow-forward"></ion-icon> 
+              </button>
+              <button ion-button color="primary" menuToggle> Main Menu</button> -->
+            
+        
+    
+    </div> <!--end of SHORT A-->
+
+    <div *ngIf="longA">
+                 
+     <h2>/ɑː/ vowel</h2>
+      
+          <div id="description">
+             <h2>Description</h2>
+       
+                  </div><!--  end of description -->
+             
+      
+      <div id="bluetext">
+      <p>/ɑː/ is a long vowel. You pronounce it with your mouth open, as if a doctor asks you to open your mouth to see your throat. Keep lips rounded and the tip of the tongue far away from the bottom teeth.</p>
+      </div>
+      <div id="description">
+         <h2>Practice</h2>
+      
+              </div><!--  end of description -->
+               
+      
+       
+              <table>
+                <tr>
+                   <td (click)="Play('../../assets/audio/a_sounds/long_a/farm.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>
+                     farm /fɑːm/</td>
+                   <td (click)="Play('../../assets/audio/a_sounds/long_a/mark.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>mark /mɑːrk/</td>
+                   <td (click)="Play('../../assets/audio/a_sounds/long_a/father.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>father /fɑːðə/</td>
+                </tr>
+                 <tr>
+                   <td (click)="Play('../../assets/audio/a_sounds/long_a/class.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>class /klɑːs/ </td>
+                   <td (click)="Play('../../assets/audio/a_sounds/long_a/charm.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>charm /tʃɑːm/</td>
+                   <td (click)="Play('../../assets/audio/a_sounds/long_a/pass.mp3')">    <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>pass /pɑːs/</td>
+                </tr>
+                <tr>
+                   <td (click)="Play('../../assets/audio/a_sounds/long_a/lark.mp3')">    <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>lark /lɑːk/ </td>
+                   <td (click)="Play('../../assets/audio/a_sounds/long_a/bark.mp3')">    <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>bark /bɑːk/</td>
+                   <td (click)="Play('../../assets/audio/a_sounds/long_a/calm.mp3')">    <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>calm /kɑːm/</td>
+                </tr>
+                <tr>
+                  <td (click)="Play('../../assets/audio/a_sounds/long_a/spark.mp3')">    <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>spark /spɑːk/</td>
+                   <td (click)="Play('../../assets/audio/a_sounds/long_a/part.mp3')">    <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>part /pɑːt/</td>
+                   <td (click)="Play('../../assets/audio/a_sounds/long_a/plant.mp3')">    <ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>plant /plɑːnt/</td>
+                </tr>
+             </table>
+                            
+      
+      <div id="writtenform">
+      <div id="description">
+         <h2>WRITTEN FORM OF /ɑː/</h2>
+      
+              </div><!--  end of description -->
+      
+      <p><strong>a + r</strong> mark, dark, lark</p>
+      <p><strong>a before f, nt, th</strong> raft, father, plant</p>
+      <p><strong>a + s before consonant</strong> pass, ask, past</p>
+      <p><strong>a + l</strong> calm, balm,almond, palm</p>
+      </div>   
+      
+     </div> <!--end of LONG A-->
+    
+     <div *ngIf="longI">
+      <h2>i: vowel</h2>
+      <div id="description">
+         <h2>Description</h2>
+      
+              </div><!--  end of description -->
+      <div id="bluetext">
+        <p>i:  is  a long vowel.  The tongue is moved forward, the tip of the tongue is close to the bottom teeth and the lips are in a smile position.  </p>
+       </div>
+       <div id="description">
+       <h2>Practice</h2>
+      
+            </div><!--  end of description -->
+           <!--  <button ion-button icon-start>
+               <ion-icon name="mic"></ion-icon>   Record Your Pronounciation</button> -->  
+       
+               <table>
+                <tr>
+                   <td (click)="Play('../../assets/audio/i_sounds/long_i/lead.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>lead /li:d/</td>
+                   <td (click)="Play('../../assets/audio/i_sounds/long_i/fleece.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>fleece /fli:s/</td>
+                   <td (click)="Play('../../assets/audio/i_sounds/long_i/key.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>key /ki:/</td>
+                </tr>
+                <tr>
+                   <td (click)="Play('../../assets/audio/i_sounds/long_i/sea.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>sea /si:/</td>
+                   <td (click)="Play('../../assets/audio/i_sounds/long_i/wheat.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>wheat /wi:t/</td>
+                   <td (click)="Play('../../assets/audio/i_sounds/long_i/canteen.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>canteen /kænti:n/</td>
+                </tr>
+                <tr>
+                   <td (click)="Play('../../assets/audio/i_sounds/long_i/meat.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>meat /mi:t/</td>
+                   <td (click)="Play('../../assets/audio/i_sounds/long_i/reach.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>reach /ri:tʃ/</td>
+                 <!--  <td (click)="Play('../../assets/audio/i_sounds/long_i/piece.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>piece /pi:s/</td>-->
+                </tr>
+                <tr>
+                   <td (click)="Play('../../assets/audio/i_sounds/long_i/peel.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>peel /pi:l/</td>
+                   <td (click)="Play('../../assets/audio/i_sounds/long_i/receive.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>receive /rɪˈsi:v/</td>
+                   <td (click)="Play('../../assets/audio/i_sounds/long_i/cheap.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>cheap /tʃi:p/</td>
+                </tr>
+             </table>
+                                                      
+                                    
+            <div id="description">
+               <h2>Written Form of i:</h2>
+      
+            </div>     
+            <div id="writtenform">
+              <h4>Main Rules</h4>
+             <p><strong>e + a  </strong> real, leak, cheap </p>
+              <p><strong>e + e </strong> sheet, peel  </p>
+            </div>   
+             <div id="note">
+             <p> <strong>Note:</strong> peace and piece, sea or see, meet or meat are spelt in the same way, but have different meanings. Peace means the lack of war, whereas piece means a part of an object.  Different meanings also have leak and leek, heal and heel, meat and meet, lead and leed.</p>
+             </div>                        
+                                                                          
+      
+    </div>
+    <div *ngIf="shortI">
+     
+   
+        <h2>/ ɪ / vowel</h2>
+    
+        <div id="description">
+            <h2>Description</h2>
+      </div><!--  end of description -->
+              
+      <div id="bluetext">
+                 <p> The pronunciation of / ɪ /  is  very similar to / i :/. However, / ɪ / is much shorter sound.  Start to  pronounce / ɪ / as if you intend to pronounce / i:/, but then immediately stop.   The stop should be energetic to make / ɪ / sound differently  from / i:/.</p>
+               
+       </div>
+        
+       <div id="description">
+                <h2>Practice</h2>
+       </div><!--  end of description -->
+                        
+          
+       <table>
+        <tr>
+           <td (click)="Play('../../assets/audio/i_sounds/short_i/list.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>list /lɪst/</td>
+           <td (click)="Play('../../assets/audio/i_sounds/short_i/ink.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>ink /ɪŋk/</td>
+           <td (click)="Play('../../assets/audio/i_sounds/short_i/insist.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>insist /ɪnˈsɪst/</td>
+        </tr>
+        <tr>
+           <td (click)="Play('../../assets/audio/i_sounds/short_i/trip.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>trip /trɪp/</td>
+           <td (click)="Play('../../assets/audio/i_sounds/short_i/bin.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>bin /bɪn/</td>
+           <td (click)="Play('../../assets/audio/i_sounds/short_i/trim.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>trim /trɪm/</td>
+        </tr>
+        <tr>
+           <td (click)="Play('../../assets/audio/i_sounds/short_i/miss.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>miss /mɪs/</td>
+           <td (click)="Play('../../assets/audio/i_sounds/short_i/pill.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>pill /pɪl/</td>
+           <td (click)="Play('../../assets/audio/i_sounds/short_i/fin.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>fin /fɪn/</td>
+        </tr>
+        <tr>
+           <td (click)="Play('../../assets/audio/i_sounds/short_i/it.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>it /ɪt/</td>
+           <td (click)="Play('../../assets/audio/i_sounds/short_i/this.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>this /ðɪs/</td>
+           <td (click)="Play('../../assets/audio/i_sounds/short_i/hill.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>hill /hɪl/</td>
+        </tr>
+     </table>
+     
+             <div id="description">
+                 <h2>Written Form of / ɪ /</h2>
+            </div>                             
+                     
+            <div id="writtenform">
+              <h4>Main Rules</h4>
+             <p><strong>i + double consonant or consonant at the end of a word  </strong> hill, lick exception:  live  </p>
+             <p><strong>y+ double consonant or consonant at the end of a word </strong> gym, symbol </p>
+                <p><strong>e in unstressed position</strong> event  /i’vent/, relax /ri’læks/</p>
+            </div>
+                      
+                                      
+                  
+    </div>
+    <div *ngIf="longU">
+      <h2>/u:/ vowel</h2>
+
+      <div id="description">
+          <h2>Description</h2>
+    
+               </div><!--  end of description -->
+          
+      <div id="bluetext">
+        <p>/u:/  is  a long vowel.  The tongue is  pulled away from the lower front teeth and the lips are slightly rounded.  </p>
+       </div>
+       <div id="description">
+          <h2>Practice</h2>
+    
+               </div><!--  end of description -->
+                 
+               <table>
+                <tr>
+                   <td (click)="Play('../../assets/audio/u_sounds/long_u/moose.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>moose /muːs/</td>
+                   <td (click)="Play('../../assets/audio/u_sounds/long_u/goose.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>goose /ɡuːs/</td>
+                   <td (click)="Play('../../assets/audio/u_sounds/long_u/clue.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>clue /kluː/</td>
+                </tr>
+                <tr>
+                   <td (click)="Play('../../assets/audio/u_sounds/long_u/cool.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>cool /kuːl/</td>
+                   <td (click)="Play('../../assets/audio/u_sounds/long_u/moon.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>moon /muːn/</td>
+                   <td (click)="Play('../../assets/audio/u_sounds/long_u/glue.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>glue /ɡluː/</td>
+                </tr>
+                <tr>
+                   <td (click)="Play('../../assets/audio/u_sounds/long_u/food.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>food /fuːd/</td>
+                   <td (click)="Play('../../assets/audio/u_sounds/long_u/room.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>room /ruːm/</td>
+                   <td (click)="Play('../../assets/audio/u_sounds/long_u/roof.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>roof /ruːf/</td>
+                </tr>
+                <tr>
+                   <td (click)="Play('../../assets/audio/u_sounds/long_u/groom.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>groom /ɡruːm/</td>
+                   <td (click)="Play('../../assets/audio/u_sounds/long_u/boom.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>boom /buːm/</td>
+                   <td (click)="Play('../../assets/audio/u_sounds/long_u/boot.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>boot /buːt/</td>
+                </tr>
+             </table>
+                                          
+                                     
+       <div id="description">
+                <h2>Written Form of /u:/</h2>
+       </div>                                      
+                               
+  
+    <div id="writtenform">
+    <h4> Main Rules</h4> 
+     <p><strong>oo + consonant  </strong> (except of k) room, loom, school exceptions: good, stood, foot </p>
+      <p><strong>e + u</strong> clue, glue </p>
+      <p> <strong>e + w</strong> drew, grew, threw </p>
+       <p><strong>u+ consonant+ vowel</strong> rune, 
+  superman, lupin</p>
+    </div>   
+     
+    </div>
+  
+  
+ 
+    <div *ngIf="shortU">
+      
+        <h2> /ʊ/ vowel</h2>
+        <div id="description">
+            <h2>Description</h2>
+      
+                 </div><!--  end of description -->
+            
+        <div id="bluetext">
+          <p>/ʊ/ is a short equivalent of  /u:/. As for /u:/ keep your lips rounded and the tongue pulled away from the lower front teeth.  </p>
+         </div>
+         <div id="description">
+            <h2>Practice</h2>
+      
+                 </div><!--  end of description -->
+                    
+    
+                                           
+                 <table>
+                  <tr>
+                     <td (click)="Play('../../assets/audio/u_sounds/short_u/put.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>put /pʊt/</td>
+                     <td (click)="Play('../../assets/audio/u_sounds/short_u/pudding.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>pudding /ˈpʊdɪŋ/</td>
+                  </tr>
+                  <tr>
+                     <td (click)="Play('../../assets/audio/u_sounds/short_u/look.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>look /lʊk/</td>
+                     <td (click)="Play('../../assets/audio/u_sounds/short_u/cook.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>cook /kʊk/</td>
+                     <td (click)="Play('../../assets/audio/u_sounds/short_u/rook.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>rook /rʊk/</td>
+                  </tr>
+                  <tr>
+                     <td (click)="Play('../../assets/audio/u_sounds/short_u/pull.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>pull /pʊl/</td>
+                     <td (click)="Play('../../assets/audio/u_sounds/short_u/full.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>full /fʊl/</td>
+                     <td (click)="Play('../../assets/audio/u_sounds/short_u/good.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>good /ɡʊd/</td>
+                  </tr>
+                  <tr>
+                     <td (click)="Play('../../assets/audio/u_sounds/short_u/bush.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>bush /bʊʃ/</td>
+                     <td (click)="Play('../../assets/audio/u_sounds/short_u/push.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>push /pʊʃ/</td>
+                     <td (click)="Play('../../assets/audio/u_sounds/short_u/would.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>would /wʊd/</td>
+                  </tr>
+               </table>
+                 
+                                         
+              <div id="description">
+                  <h2>Written Form of /ʊ/</h2>
+     
+               </div>                   
+       <div id="writtenform">
+             <h4> Main Rules </h4>
+       <p><strong>o+o+k</strong> book,look, cook, rook</p>
+        <p> <strong>u + consonant at the end of a word </strong> put, pull, push, bush</p>
+         <p><strong>u + double consonant</strong> pudding</p>
+         <p><strong>ould </strong> in would and could</p>
+    
+            </div>   
+            
+    </div>
+
+    <div *ngIf="longO">
+      <h2>/ɔ:/ vowel</h2>
+      <div id="description">
+          <h2>Description</h2>
+    
+               </div><!--  end of description -->
+      <div id="bluetext">
+        <p> /ɔ:/  is  a long vowel.  Slightly round your lips and pull the tongue back about one third away from the front teeth. Don’t forget to keep this sound long. </p>
+       </div>
+       
+  <div id="description">
+          <h2>Practice</h2>
+  </div><!--  end of description -->
+          
+  <table>
+   <tr>
+      <td (click)="Play('../../assets/audio/o_sounds/wall.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>wall /wɔ:l/</td>
+      <td (click)="Play('../../assets/audio/o_sounds/always.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>always /ɔ:lweiz/</td>
+      <td (click)="Play('../../assets/audio/o_sounds/autumn.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>autumn /ɔ:tm/</td>
+   </tr>
+   <tr>
+      <td (click)="Play('../../assets/audio/o_sounds/stall.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>stall /stɔ:l/</td>
+      <td (click)="Play('../../assets/audio/o_sounds/order.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>order /ɔ:də/</td>
+      <td (click)="Play('../../assets/audio/o_sounds/author.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>author /ɔ:θə/</td>
+   </tr>
+   <tr>
+      <td (click)="Play('../../assets/audio/o_sounds/walk.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>walk /wɔ:k/</td>
+      <td (click)="Play('../../assets/audio/o_sounds/norm.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>norm /nɔ:m/</td>
+      <td (click)="Play('../../assets/audio/o_sounds/talk.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>talk /tɔ:k/</td>
+   </tr>
+   <tr>
+      <td (click)="Play('../../assets/audio/o_sounds/call.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>call /kɔ:l/</td>
+      <td (click)="Play('../../assets/audio/o_sounds/force.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>force /fɔ:s/</td>
+      <td (click)="Play('../../assets/audio/o_sounds/bought.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>bought /bɔ:t/</td>
+   </tr>
+</table>
+
+                                 
+     
+  
+  
+            <div id="description">
+                <h2>Written Form of /ɔ:/</h2>
+            </div>  
+   <div id="writtenform">
+  
+    <h4> Main Rules</h4>
+      <p><strong>a + l </strong>walk, talk, call</p>
+     <p><strong>o + r  </strong>order, orchard</p>
+      <p><strong>a + u </strong>  autumn, author; exception: aunt </p>
+      <p> <strong>a + w  (in the end of words) </strong>  flaw, claw, law</p>
+       <p><strong>ough in the past tense of verbs </strong>  thought, sought, fought, bought </p>
+    </div>   
+   
+    
+  
+  
+    </div>
+  
+
+    <div *ngIf="shortO">
+      <h2>/ɒ/ vowel</h2>
+    <div id="description">
+        <h2>Description</h2>
+  
+             </div><!--  end of description -->
+    <div id="bluetext">
+      <p> /ɒ/ is  a short equivalent of /ɔ:/.  Lips and tongue are in a very similar position to the one for /ɔ:/ -   lips are slightly rounded and the tongue is pulled away back about one third away from the front teeth. However, keep this sound short to distinguish it from /ɔ:/ .  </p>
+     </div>
+
+     <div id="description">
+        <h2>Practice</h2>
+  
+             </div><!--  end of description -->
+
+             <table>
+               <tr>
+                  <td (click)="Play('../../assets/audio/o_sounds/spot.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>spot /spɒt/</td>
+                  <td (click)="Play('../../assets/audio/o_sounds/on.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>on /ɒn/</td>
+                  <td (click)="Play('../../assets/audio/o_sounds/plot.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>plot /plɒt/</td>
+               </tr>
+               <tr>
+                  <td (click)="Play('../../assets/audio/o_sounds/lost.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>lost /lɒst/</td>
+                  <td (click)="Play('../../assets/audio/o_sounds/rock.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>rock /rɒck/</td>
+                  <td (click)="Play('../../assets/audio/o_sounds/block.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>block /blɒk/</td>
+               </tr>
+               <tr>
+                  <td (click)="Play('../../assets/audio/o_sounds/lock.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>lock /lɒck/</td>
+                  <td (click)="Play('../../assets/audio/o_sounds/sock.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>sock /sɒck/</td>
+                  <td (click)="Play('../../assets/audio/o_sounds/hot.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>hot /hɒt/</td>
+               </tr>
+               <tr>
+                  <td (click)="Play('../../assets/audio/o_sounds/cotton.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>cotton /kɒttən/</td>
+                  <td (click)="Play('../../assets/audio/o_sounds/lost.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>lost /lɒst/</td>
+                  <td (click)="Play('../../assets/audio/o_sounds/boss.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>boss /bɒss/</td>
+               </tr>
+            </table>
+            
+          
+                                                    
+                          
+          <div id="description">
+              <h2>Written Form of /ɔ/</h2>
+          </div>                     
+                   
+
+        <div id="writtenform">
+         <h4>Main Rule</h4>
+   <p><strong>o + any consonant except of r </strong></p>
+                       </div>   
+         
+                       
+    </div>
+
+    <div *ngIf="ersound">
+     
+
+         <h2>/3:/ vowel</h2>
+         <div id="description">
+             <h2>Description</h2>
+       
+                  </div><!--  end of description -->
+         <div id="bluetext">
+           <p> /3:/  is  a long vowel that is quite  unique to English . It is likely that you will not have this sound in your language. Lift the back of the tongue, keep teeth close together and smile as you pronounce this vowel. </p>
+         </div>
+     <div id="description">
+       <h2>Practice</h2>
+     
+            </div><!--  end of description -->
+               
+             
+            <table>
+               <tr>
+                  <td (click)="Play('../../assets/audio/er_sounds/firm.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>firm /fɜ:rm/</td>
+                  <td (click)="Play('../../assets/audio/er_sounds/turn.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>turn /tɜ:n/</td>
+                  <td (click)="Play('../../assets/audio/er_sounds/girl.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>girl /gɜ:l/</td>
+               </tr>
+               <tr>
+                  <td (click)="Play('../../assets/audio/er_sounds/burn.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>burn /bɜ:n/</td>
+                  <td (click)="Play('../../assets/audio/er_sounds/learn.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>learn /lɜ:n/</td>
+                  <td (click)="Play('../../assets/audio/er_sounds/purple.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>purple /pɜ:pl/</td>
+               </tr>
+               <tr>
+                  <td (click)="Play('../../assets/audio/er_sounds/heard.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>heard /hɜ:d/</td>
+                  <td (click)="Play('../../assets/audio/er_sounds/bird.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>bird /bɜ:d/</td>
+                  <td (click)="Play('../../assets/audio/er_sounds/earn.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>earn /ɜ:n/</td>
+               </tr>
+               <tr>
+                  <td (click)="Play('../../assets/audio/er_sounds/dirty.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>dirty /dɜ:ti/</td>
+                  <td (click)="Play('../../assets/audio/er_sounds/thirty.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>thirty /θɜ:ti/</td>
+                  <td (click)="Play('../../assets/audio/er_sounds/concern.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>concern /kənsɜ:n/</td>
+               </tr>
+            </table>
+               
+                   
+                    <div id="writtenform">
+                    <div id="description">
+     
+             <h2>WRITTEN FORM OF /3:/</h2>
+                    </div>
+            
+             <p><strong> er + consonant  </strong>verb, herb</p>
+              <p><strong>ir  + consonant </strong> bird, third  </p>
+              <p> <strong>ur  + consonant  </strong>turn, burn</p>
+               <p><strong>ear + consonant</strong> learn, earth, early</p>
+            </div>   
+     
+            
+           
+         
+         
+    </div>
+
+    <div *ngIf="esound">
+      <h2>/ə/ vowel  </h2>
+      <div id="description">
+       <h2>Description</h2>
+ 
+            </div><!--  end of description -->
+       
+    <div id="bluetext">
+      <p> /ə/ is  the most common English vowel. It has a special name – shwa and always occurs in unstressed position in the beginning, in the middle or in the end of words.  Listen carefully and try to catch  /ə/  in following examples: 
+
+</p>
+     </div>
+     <div id="description">
+       <h2>Practice</h2>
+     
+            </div><!--  end of description -->
+     
+     
+     
+      <table>
+         <tr>
+         
+            <td (click)="Play('../../assets/audio/er_sounds/pilot.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>pilot /‘pailət/</td>
+
+
+            <td (click)="Play('../../assets/audio/er_sounds/agree.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>agree /əg’ri:/</td>
+
+
+              <td (click)="Play('../../assets/audio/er_sounds/collar.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>collar  /‘kɔlə/ </td>
+         </tr>
+          <tr>
+            <td (click)="Play('../../assets/audio/er_sounds/entertain.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon> entertain  /entə’tein/</td>
+            <td (click)="Play('../../assets/audio/er_sounds/approve.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>approve /ə’pru:v/</td>
+            <td (click)="Play('../../assets/audio/er_sounds/characters.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>characters/‘kærikəz/</td>
+         </tr>
+         <tr>
+            <td (click)="Play('../../assets/audio/er_sounds/dinners.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>dinners /‘dinəz/   </td>
+            <td (click)="Play('../../assets/audio/er_sounds/adore.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>adore /ə’dɔ:/ </td>
+            <td (click)="Play('../../assets/audio/er_sounds/butter.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>butter /‘bʌtə/</td>
+         </tr>
+          <tr>
+           <td (click)="Play('../../assets/audio/er_sounds/account.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>account /ə’kaunt/ </td>
+            <td (click)="Play('../../assets/audio/er_sounds/sooner.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>sooner /‘su:nə/</td>
+            <td (click)="Play('../../assets/audio/er_sounds/standard.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>standard /‘stændəd/</td>
+         </tr>
+          </table>
+          
+                                                
+     
+                           
+             
+          <div id="writtenform">
+           <div id="description">
+
+    <h2>WRITTEN FORM OF /ə/</h2>
+           </div>
+        
+
+  <p>The sound  / ə / can be represented by a wide variety of letters and the combination of letters. A common rule, however, is that this sound always occurs in the unstressed part of a word. The most common letters and combinations of letters which represent /ə / are:</p>
+   <p><strong> e +  r</strong>  perhaps /pəh’æps/</p>
+    <p> <strong>a+r</strong>  wizard  /‘wizəd/</p>
+     <p><strong>o + u</strong>  glamorous /‘glæmərəs/</p>
+     <p><strong>o + r  </strong>  sailor/‘seilə/</p>
+     <p><strong>o + u + r  </strong>  colour /‘kʌlə/</p>
+     <p><strong>e + r + e</strong>  hindered /‘hindəd/</p>
+     <p><strong>o </strong>  pilot /‘pailət/</p>
+   </div>  
+
+</div>
+        
+        
+
+
+
+
+
+
+    <div *ngIf="normale">
+    
+
+         <h2> /e/ vowel</h2>
+         <div id="description">
+          <h2>Description</h2>
+         </div>
+       
+        
+         <div id="bluetext">
+           <p>  The sound /e/ is a short vowel.  Put your lips in a smile position, open your mouth, but not very wide, and keep your tongue slightly raised.The tip of the tongue is touching front teeth of the lower jaw.  </p>
+          </div>
+          
+       
+          <div id="description">
+           <h2>Practice</h2>
+          </div>
+          <table>
+            <tr>
+               <td (click)="Play('../../assets/audio/bag_sounds/led.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>led /led/</td>
+               <td (click)="Play('../../assets/audio/bag_sounds/net.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>net /net/</td>
+               <td (click)="Play('../../assets/audio/bag_sounds/telex.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>telex /teleks/</td>
+            </tr>
+            <tr>
+               <td (click)="Play('../../assets/audio/bag_sounds/bed.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>bed /bed/</td>
+               <td (click)="Play('../../assets/audio/bag_sounds/wet.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>wet /wet/</td>
+               <td (click)="Play('../../assets/audio/bag_sounds/peck.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>peck /pek/</td>
+            </tr>
+            <tr>
+               <td (click)="Play('../../assets/audio/bag_sounds/send.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>send /send/</td>
+               <td (click)="Play('../../assets/audio/bag_sounds/check.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>check /tʃek/</td>
+               <td (click)="Play('../../assets/audio/bag_sounds/flesh.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>flesh /fleʃ/</td>
+            </tr>
+            <tr>
+               <td (click)="Play('../../assets/audio/bag_sounds/kettle.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>kettle /ketl/</td>
+               <td (click)="Play('../../assets/audio/bag_sounds/neck.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>neck /nek/</td>
+               <td (click)="Play('../../assets/audio/bag_sounds/bet.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>bet /bet/</td>
+            </tr>
+         </table>
+         
+               
+               
+                                                              
+                                                 
+                                              
+                                         
+                                                  
+               <div id="writtenform">
+             <div id="description">
+       <h2>WRITTEN FORM OF  / e /
+       </h2>
+       </div>
+       
+       <p><strong>e + consonant in a stressed position: </strong> let, desk, bed, end, tent</p>
+       </div>                    
+       </div>      
+    
+
+    <div *ngIf="opene">
+      <h2>/ æ / vowel  </h2>
+  <div id="description">
+   <h2>Description</h2>
+  </div>
+
+ 
+  <div id="bluetext">
+    <p> /æ/ is a short vowel. The pronunciation of /æ/  is very similar to /e/ - put your lips in a smile position and open your mouth, but not very wide.  The lower jaw for /æ/,however, moves more energetically down then for /e/ and the tongue is kept flat in the mouth.  The tip of the tongue is pointing towards the alveolar ridge, close to the bottom of front teeth.   </p>
+   </div>
+   
+
+   <div id="description">
+    <h2>Practice</h2>
+   </div>
+   <table>
+      <tr>
+         <td (click)="Play('../../assets/audio/bag_sounds/bag.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>bag /bæg/</td>
+         <td (click)="Play('../../assets/audio/bag_sounds/family.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>family /ʃæmili/</td>
+         <td (click)="Play('../../assets/audio/bag_sounds/land.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>land /lænd/</td>
+      </tr>
+      <tr>
+         <td (click)="Play('../../assets/audio/bag_sounds/hat.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>hat /hæt/</td>
+         <td (click)="Play('../../assets/audio/bag_sounds/and.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>and /ænd/</td>
+         <td (click)="Play('../../assets/audio/bag_sounds/tan.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>tan /tæn/</td>
+      </tr>
+      <tr>
+         <td (click)="Play('../../assets/audio/bag_sounds/plan.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>plan /plæn/</td>
+         <td (click)="Play('../../assets/audio/bag_sounds/can.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>can /kæn/</td>
+         <td (click)="Play('../../assets/audio/bag_sounds/mash.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>mash /mæʃ/</td>
+      </tr>
+      <tr>
+         <td (click)="Play('../../assets/audio/bag_sounds/thank.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>thank /θænk/</td>
+         <td (click)="Play('../../assets/audio/bag_sounds/sand.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>sand /sænd/</td>
+         <td (click)="Play('../../assets/audio/bag_sounds/pack.mp3')"><ion-icon src="assets/icon/volume-high-sharp.svg"></ion-icon>pack /pæk/</td>
+      </tr>
+   </table>
+   
+        
+        
+  <div id="writtenform">
+      <div id="description">
+<h2>WRITTEN FORM OF  /æ/
+</h2>
+</div>
+
+ <p><strong>a+ consonant in a stressed position</strong> narrow, map, add  </p>
+</div>                    
+      
+               
+       
+    </div>
+
+        
+  </div> <!-- content -->
+</ion-content>
