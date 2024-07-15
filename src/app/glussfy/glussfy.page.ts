@@ -27,7 +27,7 @@ export class GlussfyPage implements OnInit {
 		await this.productService.restore();
 	}
   ngOnInit() {
-    console.log("All set! Let's go!");
+    console.log("All set! Let's go! from glassfy page");
     console.log(this.offerings);
   }
 

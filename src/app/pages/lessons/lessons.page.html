@@ -15,8 +15,8 @@
     <p>{{link.typeOfPage}}</p>
   </ion-item>
 <ion-button (click)="link()">Unlock</ion-button>-->
-<ion-item class="homepage1" *ngFor="let link of links; let i=index" [color]="i%2===0 ? 'tertiary' : 'primary'"  (click)="navigate(i+1,link.link, link.linkId)"   routerDirection="forward">
-    <ion-label>   Lesson {{i+1}}. {{link.title}} <span *ngIf='link.locked'class="locked"> Pro</span> </ion-label>
+<ion-item class="homepage1" *ngFor="let link of links; let i=index" [color]="i%2===0 ? 'tertiary' : 'primary'"  (click)="navigate(i+1,link.link, link.linkId, link.locked)"   routerDirection="forward">
+    <ion-label>   Lesson {{i+1}}. {{link.title}} <span *ngIf="link.locked && pro===false" class="locked"> Pro</span> </ion-label>
   
   </ion-item>
  </div>

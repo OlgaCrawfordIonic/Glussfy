@@ -1,6 +1,5 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import { Link } from './link.model';
-import { ProductService } from '../product.service'; // Import ProductService
 
 import { BehaviorSubject, take,map,tap } from 'rxjs';
 
@@ -8,15 +7,15 @@ import { BehaviorSubject, take,map,tap } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class LinksService {
+export class LinksService implements OnInit {
   private _links = new BehaviorSubject<Link[]>([]);
   lesson!:boolean;
   num!:number;
   pro:boolean=false;
   
-  constructor(private productService:ProductService) {
+  constructor() {
     this.initializeLinks();
-    this.subscribeToProStatus();
+  
   }
 
  private initializeLinks() {
@@ -1056,12 +1055,7 @@ this._links.next(links.map((link, index) => {
 }));
 }
 
-private subscribeToProStatus() {
-  this.productService.user.subscribe(user => {
-    this.pro = user.pro;
-    console.log('Pro status updated:', this.pro);
-  });
-}
+
 get links() {
   return this._links.asObservable();
 }
@@ -1103,6 +1097,9 @@ unlockLesson()
  
 }
 
+
+
+
 unlockLessons() {
   console.log('clicked');
   return this.links.pipe(
@@ -1110,17 +1107,25 @@ unlockLessons() {
     tap(links => {
       console.log(links);
       const UpdatedLinks = links.map(link => {
-        if (this.pro) {
+        return new Link(link.id, link.title, link.link, link.linkId, link.lesson, link.typeOfPage, false, link.typeOfSubscription);
+
+       /* if (this.pro) {
           return new Link(link.id, link.title, link.link, link.linkId, link.lesson, link.typeOfPage, false, link.typeOfSubscription);
         } else {
           console.log(link)
           return link;
-        }
+        }*/
       });
       console.log(UpdatedLinks);
       this._links.next(UpdatedLinks);
     })
   ).subscribe();;
 }
+ngOnInit(): void {
+ // this.subscribeToProStatus();
+  //this.unlockLessons();
+}
 
 }
+
+

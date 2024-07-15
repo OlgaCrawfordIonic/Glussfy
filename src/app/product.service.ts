@@ -7,13 +7,16 @@ import { Glassfy,
 import { environment } from 'src/environments/environment';
 import { BehaviorSubject } from 'rxjs';
 import { AlertController } from '@ionic/angular';
+import { UserService } from './user.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
-  user=new BehaviorSubject({pro:false});
+
   private _offerings = new  BehaviorSubject<GlassfyOffering[]>([]);
+
+ 
   
 
   async initGlassfy()
@@ -25,7 +28,8 @@ export class ProductService {
         watcherMode: false});
         // Get all offerings (products)
         const offerings = await Glassfy.offerings();
-        console.log(offerings)
+        const perm= await Glassfy.permissions();
+        console.log('from init in products' + offerings,perm)
         this._offerings.next(offerings.all);
         console.log('No error from initialize function' )
   
@@ -36,11 +40,13 @@ export class ProductService {
   
   }
   }
-  constructor(private alertController:AlertController) {this.initGlassfy(); }
+  constructor(private alertController:AlertController,public userService:UserService) {this.initGlassfy(); }
   get offerings(){
     return this._offerings.asObservable();
-  }
+   }
 
+
+  
   async purchase(sku: GlassfySku) {
     try{
    const transaction=await Glassfy.purchaseSku({sku});
@@ -51,14 +57,14 @@ export class ProductService {
    }
     }
     catch(e){
-      console.log.apply('There is a error in purchasing' + e);
-      const alert = await this.alertController.create({
-        header: 'Purchase failed',
-        message: 'error in subscribing',
-        buttons: ['OK'],
-      });
+      console.log.apply('There is a error in purchasing1111' + e);
+     // const alert = await this.alertController.create({ dont need that as aplestore sends back its own alerts
+       // header: 'Purchase failed',
+       // message: 'error in subscribing message from app',
+      //  buttons: ['OK'],
+    // });
   
-      await alert.present();
+   //   await alert.present();
     }
   }
 
@@ -72,12 +78,11 @@ export class ProductService {
     for (const perm of permissions) {
       if (perm.isValid) {
         if (perm.permissionId === 'glassfy_premium_monthly_1.99' || 'glassfy_premium_3months_4.99'  || 'glassfy_premium_6months_8.99') {
-          const user = this.user.getValue();
-          user.pro=true;
-          this.user.next(user);
-          console.log(this.user, user)
+         {this.userService.updateUserProStatus(true)}
+          
     // making the user pro now can install the logic of unlocking lessons
   }
+  else{console.log('from restore function, not subscribed')}
   }
   }
   }
@@ -86,12 +91,7 @@ export class ProductService {
 
   handleSuccessfulTransactionResult(transaction:GlassfyTransaction,sku:GlassfySku){
     console.log('from haddlestr' + transaction,sku)
-    const user = this.user.getValue();
-          user.pro=true;
-          this.user.next(user);
-          console.log(this.user, user)
+    this.userService.updateUserProStatus(true)
     
   }
-
- 
 }

@@ -1,3 +1,13 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <div *ngIf="checkingStatus && !error">
+    <p>Loading loading...</p> <!-- Replace this with your loading indicator -->
+  </div>
+  <div *ngIf="error">
+    <p>Error loading subscription status. Please try again later.</p>
+  </div>
+  <div *ngIf="!checkingStatus && !error">
+    <ion-router-outlet></ion-router-outlet>
+  </div>
 </ion-app>
+
+

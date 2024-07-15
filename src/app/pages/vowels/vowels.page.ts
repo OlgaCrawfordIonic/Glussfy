@@ -17,7 +17,7 @@ import { AudioService } from '../../audio.service';
   imports: [IonContent, IonHeader, IonTitle,
     IonToolbar,IonButton,IonButtons,
     IonBackButton,IonIcon, CommonModule,
-    IonIcon,CommonModule,RouterLink]
+    IonIcon,RouterLink]
 })
 export class VowelsPage implements OnInit, OnDestroy{
 
