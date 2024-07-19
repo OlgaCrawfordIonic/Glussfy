@@ -39,4 +39,12 @@ export const routes: Routes = [
     path: 'tonguetwisters',
     loadComponent: () => import('./pages/tonguetwisters/tonguetwisters.page').then( m => m.TonguetwistersPage)
   },
+  {
+    path: 'storage',
+    loadComponent: () => import('./pages/storage/storage.page').then( m => m.StoragePage)
+  },
+  {
+    path: 'network',
+    loadComponent: () => import('./pagews/network/network.page').then( m => m.NetworkPage)
+  },
 ];

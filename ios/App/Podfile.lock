@@ -8,10 +8,14 @@ PODS:
     - Capacitor
   - CapacitorKeyboard (6.0.1):
     - Capacitor
+  - CapacitorNetwork (6.0.1):
+    - Capacitor
   - CapacitorPluginGlassfy (4.0.0):
     - Capacitor
     - Glassfy (= 1.4.0)
     - GlassfyGlue (= 1.4.5)
+  - CapacitorPreferences (6.0.1):
+    - Capacitor
   - CapacitorStatusBar (6.0.0):
     - Capacitor
   - Glassfy (1.4.0)
@@ -24,7 +28,9 @@ DEPENDENCIES:
   - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorHaptics (from `../../node_modules/@capacitor/haptics`)"
   - "CapacitorKeyboard (from `../../node_modules/@capacitor/keyboard`)"
+  - "CapacitorNetwork (from `../../node_modules/@capacitor/network`)"
   - CapacitorPluginGlassfy (from `../../node_modules/capacitor-plugin-glassfy`)
+  - "CapacitorPreferences (from `../../node_modules/@capacitor/preferences`)"
   - "CapacitorStatusBar (from `../../node_modules/@capacitor/status-bar`)"
 
 SPEC REPOS:
@@ -43,8 +49,12 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capacitor/haptics"
   CapacitorKeyboard:
     :path: "../../node_modules/@capacitor/keyboard"
+  CapacitorNetwork:
+    :path: "../../node_modules/@capacitor/network"
   CapacitorPluginGlassfy:
     :path: "../../node_modules/capacitor-plugin-glassfy"
+  CapacitorPreferences:
+    :path: "../../node_modules/@capacitor/preferences"
   CapacitorStatusBar:
     :path: "../../node_modules/@capacitor/status-bar"
 
@@ -54,11 +64,13 @@ SPEC CHECKSUMS:
   CapacitorCordova: be703980ca797f847c3356f78fa175d21c8330c2
   CapacitorHaptics: 9ebc9363f0e9b8eb4295088a0b474530acf1859b
   CapacitorKeyboard: 5f32a712adf41e07a61caafb82cf29fb6d8ba123
+  CapacitorNetwork: 5c94acfdddc22043f2ffaff224ce9b4aa5a179f0
   CapacitorPluginGlassfy: fff3790bdd1c3b46dd15544e2792bfbe4ecf7d0d
+  CapacitorPreferences: 72909b165bc7807103778ddbb86d5d8ce06abf71
   CapacitorStatusBar: 2e4369f99166125435641b1908d05f561eaba6f6
   Glassfy: 6c13edc242715212cfd01a0a12c8553f2f06cfcb
   GlassfyGlue: 828c39792238a84c07d27a71c9eb4819b0b1dfa9
 
-PODFILE CHECKSUM: da5a3c36ca400dd271e5ab16524ded8af6511ea5
+PODFILE CHECKSUM: bdaee5ee7c09f6ad391278bed7f6eab0ab7eee41
 
 COCOAPODS: 1.15.2

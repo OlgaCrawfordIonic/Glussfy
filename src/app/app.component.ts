@@ -22,7 +22,10 @@ export class AppComponent implements OnInit{
  error:boolean=false;
  async initGlassfy()
   { //get user status
-   
+      //storage function if (user==='pro')
+       // { this.userService.updateUserProStatus(true) }
+      //else {checkWififunction if (wifi===true) { Glussfy logic}
+      //else {}
         try {
           await this.productService.initGlassfy();
           const permissions = await Glassfy.permissions();
@@ -31,7 +34,7 @@ export class AppComponent implements OnInit{
       if (perm.isValid) {
         if (perm.permissionId === 'glassfy_premium_monthly_1.99' || 'glassfy_premium_3months_4.99'  || 'glassfy_premium_6months_8.99') {
          {this.userService.updateUserProStatus(true)}
-         (console.log('pro status prom app component after updateuserprooo'))
+         (console.log('pro status prom app component after updateuserprooooo'))
           
     // making the user pro now can install the logic of unlocking lessons
   }

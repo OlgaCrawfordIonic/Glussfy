@@ -1119,7 +1119,7 @@ unlockLessons() {
       console.log(UpdatedLinks);
       this._links.next(UpdatedLinks);
     })
-  ).subscribe();;
+  ).subscribe();
 }
 ngOnInit(): void {
  // this.subscribeToProStatus();

@@ -90,7 +90,7 @@ export class ProductService {
 
 
   handleSuccessfulTransactionResult(transaction:GlassfyTransaction,sku:GlassfySku){
-    console.log('from haddlestr' + transaction,sku)
+    console.log('from haddlesusstr' + transaction,sku)
     this.userService.updateUserProStatus(true)
     
   }

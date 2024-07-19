@@ -1,0 +1,13 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>network</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="/home">Back</ion-back-button>
+		</ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+   <ion-button (click)="registerNetworkListener()">Network Status changed</ion-button>
+   <ion-button (click)="getStatus()">Get Status</ion-button>
+</ion-content>
