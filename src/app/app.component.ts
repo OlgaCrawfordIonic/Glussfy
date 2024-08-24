@@ -5,6 +5,8 @@ import { UserService } from './user.service';
 import { BehaviorSubject } from 'rxjs';
 import { CommonModule } from '@angular/common'; // Import CommonModule
 import { Glassfy} from "capacitor-plugin-glassfy";
+import { StorageService } from './storage.service';
+import {Preferences} from '@capacitor/preferences';
 
 
 
@@ -22,11 +24,19 @@ export class AppComponent implements OnInit{
  error:boolean=false;
  async initGlassfy()
   { //get user status
-      //storage function if (user==='pro')
+    const { value } = await Preferences.get({ key: 'userStatus' });
+     console.log(`Hello ${value}!`);
+     if (value==='pro')
+       {console.log("Storage rerurned pro from app.compon11");
+        this.userService.updateUserProStatus(true)
+       }
+    else {
+ 
        // { this.userService.updateUserProStatus(true) }
       //else {checkWififunction if (wifi===true) { Glussfy logic}
       //else {}
         try {
+          
           await this.productService.initGlassfy();
           const permissions = await Glassfy.permissions();
           console.log('after await  permissions');
@@ -41,14 +51,19 @@ export class AppComponent implements OnInit{
               }
           };
      
-      } catch (e) {
+      }
+      
+    catch (e) {
       // initialization error
       console.log('init error: ', e);
   }
+
+
+}//fromelse
   }
   
   constructor(
-    private productService: ProductService, private userService:UserService
+    private productService: ProductService, private userService:UserService, private storageService:StorageService
    
   ) {this.initGlassfy()}
 

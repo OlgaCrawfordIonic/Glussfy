@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar,IonButton ,IonBackButton, IonButtons,} from '@ionic/angular/standalone';
 import { Network, ConnectionStatus } from '@capacitor/network';
+import { compileClassDebugInfo } from '@angular/compiler';
 
 @Component({
   selector: 'app-network',
@@ -25,14 +26,14 @@ export class NetworkPage implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.registerNetworkListener();
+   // this.registerNetworkListener();
   }
 
   ngOnDestroy() {
-    this.unregisterNetworkListener();
+  //  this.unregisterNetworkListener();
   }
 
-  registerNetworkListener() {
+  /*registerNetworkListener() {
     this.networkListener = Network.addListener('networkStatusChange', (status: ConnectionStatus) => {
       console.log('Network status changed', status);
       // You can add more logic here to respond to network status changes
@@ -43,5 +44,7 @@ export class NetworkPage implements OnInit, OnDestroy {
     if (this.networkListener) {
       this.networkListener.removeAllListeners(); // Remove the listener when the component is destroyed
     }
-  }
+  }*/  
+ //something wroimg with these functions while compiling
+
 }
